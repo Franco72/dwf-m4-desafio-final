@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: teal;
+}
+/* bloques de la página */
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 48px;
+}
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 32px;
+}
+
+/* el welcome es una sección de la página principal, el header es un componente */
+.welcome {
+  max-width: 1440px;
+  overflow: hidden;
+  background-image: url("https://i.postimg.cc/ZRW8y75L/welcome-bg.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 70px calc(616px - 70px);
+  color: #fff;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  .welcome {
+    height: initial;
+  }
+}
+/* 
+TODO: El header es un componente */
+.header {
+  padding: 0 10px;
+  /* border: solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 197px;
+  height: 48px;
+}
+.header__nav {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 60px;
+  }
+}
+.header__nav-item {
+  /* border: solid; */
+  padding: 4px 4px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__nav-item {
+    display: initial;
+  }
+}
+.header__nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+}
+.header__nav-link:hover {
+  opacity: 0.7;
+}
+.header__nav-item--logo {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .header__nav-item--logo {
+    display: none;
+  }
+}
+/* TODO */
+.welcome__title-content {
+  display: flex;
+  margin-top: 190px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  height: 600px;
+}
+/* limitar el ancho máximo del contenido del welcome para televisores x ejemplo */
