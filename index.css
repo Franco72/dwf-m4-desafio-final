@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  background-color: teal;
+  background-color: #000;
 }
 /* bloques de la página */
 .title {
@@ -16,84 +19,115 @@ body {
   margin: 0;
   font-size: 32px;
 }
-
-/* el welcome es una sección de la página principal, el header es un componente */
-.welcome {
+.container-body {
   max-width: 1440px;
+  margin: 0 auto;
+}
+.big-text {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 24px;
+}
+/* .small-text {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 16px;
+} */
+/* WELCOME SECTION */
+.welcome {
   overflow: hidden;
-  background-image: url("https://i.postimg.cc/ZRW8y75L/welcome-bg.webp");
+  background-image: url("./img/welcome-bg.png");
   background-attachment: fixed;
   background-size: cover;
+}
+.welcome-content {
   display: grid;
-  grid-template-rows: 70px calc(616px - 70px);
+  grid-template-rows: 70px calc(100vh - 70px);
   color: #fff;
   height: 100vh;
+  /* max-width: 1200px; */
+  margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .welcome {
     height: initial;
   }
 }
-/* 
-TODO: El header es un componente */
-.header {
-  padding: 0 10px;
-  /* border: solid; */
+.welcome__title-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+#header-container {
+  max-height: 70px;
+}
+/* ABOUT ME SECTION */
+.about-me {
+  min-height: 538px;
+  max-height: 100vh;
+  background-color: #141414;
+  color: #fafafa;
+  display: flex;
   align-items: center;
 }
-.header__logo {
-  width: 197px;
-  height: 48px;
-}
-.header__nav {
-  padding: 0;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .header__nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 60px;
+@media (min-width: 960px) {
+  .about-me {
+    min-height: 420px;
+    max-height: 538px;
+    background-color: #fff;
+    color: #2c2c2c;
   }
 }
-.header__nav-item {
-  /* border: solid; */
-  padding: 4px 4px;
+.about-me__content {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media (min-width: 960px) {
+  .about-me__content {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+.about-me__content-img {
+  max-width: 380px;
+  max-height: 480px;
   display: none;
 }
-@media (min-width: 768px) {
-  .header__nav-item {
+@media (min-width: 960px) {
+  .about-me__content-img {
     display: initial;
   }
 }
-.header__nav-link {
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  text-decoration: none;
-  color: #fff;
+.about-me__content-text {
+  display: grid;
+  gap: 45px;
+  text-align: start;
+  max-width: 610px;
 }
-.header__nav-link:hover {
-  opacity: 0.7;
+.about-me__title {
+  margin: 0 auto;
+  color: #06ba63;
 }
-.header__nav-item--logo {
-  list-style: none;
+.about-me__text {
+  font-size: 16px;
 }
-@media (min-width: 768px) {
-  .header__nav-item--logo {
-    display: none;
+@media (min-width: 960px) {
+  .about-me__text {
+    /* font-size: 24px; */
   }
 }
-/* TODO */
-.welcome__title-content {
-  display: flex;
-  margin-top: 190px;
-  flex-direction: column;
-  align-items: center;
+/* SERVICES SECTION */
+#services-container {
+  background-color: rgb(128, 141, 155);
 }
-
-.article {
-  height: 600px;
+/* FOOTER SECTION */
+#footer-cotainer {
 }
-/* limitar el ancho máximo del contenido del welcome para televisores x ejemplo */
+/* * Importar contactComponent cuando todo esté listo */

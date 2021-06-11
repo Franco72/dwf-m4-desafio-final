@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #000;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 48px;
+}
+/* WELCOME SECTION */
+.container-body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.welcome {
+  overflow: hidden;
+}
+.welcome__container {
+  display: grid;
+  grid-template-rows: 70px calc(100vh - 70px);
+}
+.welcome__content {
+  padding: 0 20px;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 858px) {
+  .welcome__content {
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+}
+
+.welcome__title {
+  margin-top: 20px;
+}
+.welcome__img {
+  max-width: 300px;
+  max-height: 300px;
+}
+@media (min-width: 500px) {
+  .welcome__img {
+    max-width: 480px;
+    max-height: 480px;
+  }
+}
+@media (min-width: 858px) {
+  .welcome__img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+@media (min-width: 960px) {
+  .welcome__img {
+    max-width: 560px;
+    max-height: 560px;
+  }
+}
+/* WORKS SECTION */
+#works-container {
+  color: #fff;
+}

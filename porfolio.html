@@ -22,40 +22,32 @@
     <script async src="./components/cards component/index.js"></script>
     <link rel="stylesheet" href="./components/cards component/index.css" />
     <!-- =============== -->
-    <!-- contactComponent -->
-    <script async src="./components/contactComponent/index.js"></script>
-    <link rel="stylesheet" href="./components/contactComponent/index.css" />
-    <!-- =============== -->
     <!-- footerComponent -->
     <script async src="./components/footerComponent/index.js"></script>
     <link rel="stylesheet" href="./components/footerComponent/index.css" />
     <!-- =============== -->
-    <script async src="./index.js"></script>
-    <link rel="stylesheet" href="./index.css" />
+    <script async src="./portfolio.js"></script>
+    <link rel="stylesheet" href="./portfolio.css" />
   </head>
   <body>
     <div class="container-body">
       <section class="welcome">
-        <div class="welcome-content">
+        <div class="welcome__container">
           <div id="header-container"></div>
-          <div class="welcome__title-content">
-            <h2 class="title" id="welcome-title"></h2>
-            <h1 class="subtitle" id="welcome-subtitle"></h1>
+          <div class="welcome__content">
+            <h2 class="title welcome__title">Porftolio</h2>
+            <!-- SUBIR ESTA IMAGEN -->
+            <img
+              src="./img/undraw_Detailed_information_re_qmuc.svg"
+              alt=""
+              class="welcome__img"
+            />
           </div>
         </div>
       </section>
-      <section class="about-me">
-        <div class="about-me__content">
-          <img src="" alt="" class="about-me__content-img" />
-          <div class="about-me__content-text">
-            <h2 class="subtitle about-me__title"></h2>
-            <p class="big-text about-me__text"></p>
-          </div>
-        </div>
-      </section>
-      <section id="services-container"></section>
+      <section id="works-container"></section>
       <section id="contact-container"></section>
-      <div id="footer-container"></div>
+      <footer id="footer-container"></footer>
     </div>
   </body>
 </html>
