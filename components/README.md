@@ -39,3 +39,5 @@ Si se pasan estos 2 datos se generará un botón, el "textOfLink" va a ser lo qu
 # necesita importar su script y su hoja de estilos llamado
 
 # la forma de usarlo es llamando a la función footerComponent(container), debe recibir un parámetro que es el contenedor en el cual vivirá
+
+# necesita un kit de fontAwesome el cual tenga estos iconos dentro "fa-bars","fa-instagram","fa-linkedin","fa-github", el kit debe ser importado antes de importar este componente

@@ -4,7 +4,6 @@ async function getCDNData() {
       "https://cdn.contentful.com/spaces/8b7skyzta8a4/environments/master/entries?access_token=CjFhI4GUCiIEaGDAcFuIesyrsqz8jjfJwUU4559oCGw"
     );
     const json = await response.json();
-    console.log(json);
     const worksData = [];
     for (const e of json.items) {
       let img = "";
@@ -34,7 +33,7 @@ async function getCDNData() {
 (async function main() {
   // agregando el componente "Header"
   const headerContainer = document.getElementById("header-container");
-  headerComponent(headerContainer);
+  headerComponent(headerContainer, "portfolio");
   // pidiendo los datos de contentful a través de su API (GET)
   const cdnData = await getCDNData();
   // agregando el componente "Cards"

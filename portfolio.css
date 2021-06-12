@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background-color: #000;
@@ -10,11 +13,11 @@ body {
   margin: 0;
   font-size: 48px;
 }
-/* WELCOME SECTION */
 .container-body {
   max-width: 1440px;
   margin: 0 auto;
 }
+/* WELCOME SECTION */
 .welcome {
   overflow: hidden;
 }
@@ -38,13 +41,12 @@ body {
     grid-template-rows: auto;
   }
 }
-
 .welcome__title {
   margin-top: 20px;
 }
 .welcome__img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 290px;
+  max-height: 290px;
 }
 @media (min-width: 500px) {
   .welcome__img {
